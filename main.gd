@@ -4,5 +4,5 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	label.text = "Hellooo spoilerr"
+	label.text = "Hellooo spoilerr"s
 	label.modulate = Color.AQUAMARINE
