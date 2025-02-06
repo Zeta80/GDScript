@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://do2k6e0mwct27"]
+[gd_scene load_steps=3 format=3 uid="uid://do2k6e0mwct27"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_qtlhx"]
+[ext_resource type="Script" path="res://chara.gd" id="2_rsk40"]
 
-[node name="main" type="Node"]
+[node name="main" type="Node" node_paths=PackedStringArray("cahara_death")]
 script = ExtResource("1_qtlhx")
+cahara_death = NodePath("chara3")
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 8
@@ -22,3 +24,23 @@ theme_override_font_sizes/font_size = 76
 text = "Text label"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="chara" type="Node" parent="."]
+script = ExtResource("2_rsk40")
+professione = "villager"
+health = 13
+
+[node name="chara2" type="Node" parent="."]
+script = ExtResource("2_rsk40")
+professione = "potion_seller"
+health = 17
+
+[node name="chara3" type="Node" parent="."]
+script = ExtResource("2_rsk40")
+professione = "cavaliere"
+health = 150
+
+[node name="chara4" type="Node" parent="."]
+script = ExtResource("2_rsk40")
+professione = "king"
+health = 230
